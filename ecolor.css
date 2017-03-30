@@ -1,0 +1,397 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a, ins {
+    text-decoration: none;
+}
+div {
+    display: block;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    height: 0;
+    clear: both;
+}
+.header {
+	height: 60px;
+	background-color: #1e89e0;
+	display: block;
+}
+.header .headercontent {
+	width: 1180px;
+	margin: 0 auto;
+	line-height: 60px;
+}
+.header .headercontent span {                   /*饿了吗字*/
+	display: block;
+	height: 0;
+	overflow: hidden;
+	text-indent: -900em;   
+}
+.header .headercontent .logo_icon {
+	float: left;
+	margin-right: 30px;
+}
+.header .headercontent .logo_icon::before  {     /*插入图片*/
+	content: url(../images/elema.png); 
+}  
+.header .headercontent a {
+	display: inline-block;
+	width: 112px;
+	color: #fff;
+	text-align: center;
+}
+header .headercontent:after {
+	content:"";
+	display: table;
+	clear: both;
+	height: 0;
+}
+.header .headercontent nav {
+	float: right;
+	width: 350px;
+}
+.header .headercontent nav .people-box {
+	float: right;
+}
+.header .headercontent nav a {
+	color: #d2e7f9;
+	font-size: 14px;
+	margin: 0 auto;
+}
+.header .headercontent nav a:hover {
+	color: #fff;
+}
+.header .headercontent nav .service::before  {     /*插入图片*/
+	content: url(../images/service.png); 
+	vertical-align: middle;
+	box-sizing: inherit;
+	margin-right: 5px;
+} 
+.header .headercontent nav .cellphone:before {    /*插入手机图片*/
+	content: url(../images/cellphone.png); 
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.header .headercontent nav .people:before {         /*插入登录*/
+	content: url(../images/people.png); 
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.header .headercontent:after {
+	content:"";
+	display: table;
+	clear: both;
+	height: 0;
+} 
+
+/*中部内容开始*/
+
+.content {
+	/*background-color: skyblue;*/
+	width: 1180px;
+
+	margin: 0 auto;
+}
+
+.content .search-tab {
+	width: 1180px;
+}  
+.content .search-tab .place-seach {       /*搜索框*/
+	float: right;
+	margin: 10px 0 ;
+	height: 32px;
+	border: 1px solid #ccc;
+	background: #fff;
+	z-index: 3;
+	position: relative;
+	display: block;
+}
+.content .search-tab:after {      /*清除搜索的浮动*/
+	content:"";
+	display: table;
+	clear: both;
+	height: 0;
+}
+.content .search-tab .place-seach .search-btn {          /*搜索的放大镜*/
+	float: right;
+	width: 46px;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;
+	color: #999;
+	margin: 3px 0;
+}
+.content .search-tab .place-seach .search-btn::before {     /*放大镜图片*/
+    content: url(../images/search.png);
+    box-sizing: inherit;
+}
+
+.content .search-tab .place-seach label {
+	display: none;
+}
+.content .search-tab .place-seach input {              /*搜索框*/
+	width: 236px;
+	outline: 0;
+	border: 0;
+	transition: width .3s ease-in-out;
+	line-height: 24px;
+	margin: 4px 0;
+}
+.content .search-tab .place-seach input:active {           /*点击效果*/
+	width: 300px;
+}
+.content .content-header {              /*内容头部*/
+	border: 1px solid #e6e6e6;
+	font-size: 14px;
+	margin: 0 atuo;
+	display: block;
+}
+.content .place-img {                  /*内容谁去拿外卖*/
+	text-align:right;
+}
+.content .place-img .place-tab {             /*内容谁去拿外卖img父div*/
+	margin-bottom: 6px;
+	display: inline-block;
+	width: 186px;
+	height: 42px;
+	position: relative;
+	cursor: pointer;
+	z-index: 2;
+}
+.content .place-img .place-tab img {             /*谁去拿外卖图片地址*/
+	width: 186px;
+	height: 55px;
+	vertical-align: middle;
+}
+
+.content .content-header .content-list {                   /*内容头部*/
+	line-height: 26px;
+	padding: 10px 10px 10px 7em;
+	background-color: #fff;
+	position: relative;
+}
+.content .content-header .content-list .content-name {             /*内容：商家分类*/
+	position: absolute;
+	left: 10px;
+	top: 15px;
+	color: #999;
+}
+.content .content-header .content-list a {                 /*内容头部所有a*/
+	color: #666;
+	line-height: 36px;
+	border-radius: 0;
+	padding: 0 16px;
+	height: 38px;
+}
+.content .content-header .content-list a:hover {                  /*内容头部a:hover*/
+	background-color: #f6f6f6;
+} 
+.content .contentbox {
+	position: relative;
+	border: 1px solid #e6e6e6;
+	border-bottom: 0;
+	margin-top: 20px;
+	background-color: #fff;
+
+}
+.content .contentbox .contentlist .rstblock {    /*a标签*/
+	background-color: #fff;
+	border-bottom: 1px #f5f5f5 solid;
+	height: 140px;
+	float: left;
+	font-size: 12px;
+	position: relative;
+	width: 282px;
+}
+.content .contentbox .contentlist .rstblock .rstblock-logo {   /*logo与19分钟*/
+	padding: 20px; 
+	color: #999;
+	text-align: center;
+	float: left;
+	font-size: 12px;
+	position: relative;
+}
+.content .contentbox .contentlist .rstblock .rstblock-logo .rstblock-icon {   /*五星*/
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin-bottom: 10px;
+}
+.content .contentbox .contentlist .rstblock .rstblock-logo .brand {     /*品牌*/
+	background-image: url(https://faas.elemecdn.com/desktop/media/img/icon.d5d696.png);
+	background-position: 4px -487px;
+	z-index: 1;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 20px;
+	left: 40px;
+	display: inline-block;
+}
+.content .contentbox .contentlist .rstblock .rstblock_content {
+	padding: 20px;
+	display: block;
+}
+.content .contentbox .contentlist .rstblock .rstblock_content .rstblock_monthsales {
+	color: #999;
+	margin-left: 67px;	
+    font-size: 12px;
+}
+.content .contentbox .contentlist .rstblock .rstblock_content .rstblock-title {
+	font-size: 16px;
+	margin-bottom: 6px;
+	font-weight: 600;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #333;
+	box-sizing: inherit;
+}
+.content .contentbox .rstblock .rstblock_content .star_icon .starratings::before {     /*五星*/
+	content: url(../images/star.png);
+    box-sizing: inherit;
+    width: 96%;
+    margin-right: 30px;
+}
+.content .contentbox .rstblock .rstblock_content .rstblock-ticket i {
+	display: inline-block;
+	vertical-align: middle;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 16px;
+	overflow: hidden;
+	text-align: center;
+	width: 18px;
+	margin-top: 10px;
+	border-radius: 2px;
+	color: #999999;
+	border: 1px solid;
+}
+.content .contentbox .contentlist .rstblock .rstblock_content .cost {
+	color: #999;
+	margin-top: 3px;
+}
+.content .contentbox .rstblock .rstblock_content .star_icon span {
+	position: absolute;
+
+
+	white-space: nowrap;
+	color: #ffc30c;
+}
+.content .contentbox  #MoreRst {
+	line-height: 70px;
+	text-align: center;
+	background: linear-gradient(to bottom,#f9f9f9,#eee);
+	font-size: 18px;
+	cursor: pointer;
+	color: #777;
+	height: 62px;
+}
+
+footer {
+	width: 1180px;
+	height: 600px;
+	margin: 50px auto;
+	border-top: 1px solid #eee;
+}
+
+footer .footercontent .footer-link {
+	display: inline-block;
+	margin-top: 30px;
+	width: 15%;
+}
+footer .footercontent .footer-link .footer-link-title {
+	font-size: 14px;
+	font-weight: 400;
+}
+footer .footercontent .footer-link .footer-link-item {
+	color: #999;
+	line-height: 26px;
+	display: block;
+	font-size: 12px;
+	width: 50%
+}
+footer .footercontent .footer-content {
+	width: 23%;
+	padding-left: 3%;
+	border-left: 1px #e6e6e6 solid;
+	padding-right: 10px;
+	float: left;
+	margin-top: 30px;
+}
+footer .footercontent .footer-content .footer-link-item {
+	margin-bottom: 8px;
+	color: #666;
+	line-height: 24px;
+	display: block;
+	font-size: 14px;
+	width: 80%
+}
+footer .footercontent .footer-content .footer-link-item a {
+	color: #666;
+}
+footer .footercontent .footer-content .footer-link-item .footer-we .footer-wechat::before {
+	content: url(../images/wechat.png);
+	vertical-align: top;
+}
+footer .footercontent .footer-content .footer-link-item .footer-we .footer-weibo::before {
+	content: url(../images/weibo.png);
+	vertical-align: top;
+}
+footer .footercontent .footer-content .footer-link-item .footer-we {
+	float: right;
+	margin-right: 70px;
+}
+footer .footercontent .footer-mobile {
+	float: right;
+	margin-top: 20px;
+	width: 265px;
+}
+footer .footercontent .footer-mobile a .footer-mobile-icon {
+	width: 90px;
+	height: 90px;
+	margin-right: 20px;
+	float: left;
+}
+footer .footercontent .footer-mobile .footer-mobile-content {
+	margin-top: 20px;
+}
+footer .footercontent .footer-mobile .footer-mobile-content h3 {
+	font-size: 16px;
+	color: #333;
+	font-weight: 700;
+	line-height: 30px;
+}
+footer .footercontent .footer-mobile .footer-mobile-content p {
+	font-size: 12px;
+	color: #666;
+	margin: 3px 0 10px;
+}
+footer .footercontent .footer-copyright {
+	clear: both;
+	padding-top: 60px;
+	text-align: center;
+	font-size: 12px;
+}
+footer .footercontent .footer-copyright h5 {
+	color: #0e0e0e;
+}
+footer .footercontent .footer-copyright p {
+	color: #999;
+	margin-top: 6px;
+}
+footer .footercontent .footer-copyright p a {
+	color: #999;
+	font-size: 10px;
+}
+footer .footercontent .footer-polices {
+	width: 1200px;
+	padding: 5px 0;
+	text-align: center;
+}
+footer .footercontent .footer-polices a img {
+    text-align: center;
+    height: 30px;
+}
